@@ -1,0 +1,23 @@
+{
+  "name": "webpack-5-circular",
+  "version": "1.0.0",
+  "description": "Webpack 5 issue with circular dependencies",
+  "main": "dist/main.js",
+  "scripts": {
+    "dist": "webpack --mode=development",
+    "start": "node dist/main.js"
+  },
+  "author": "Dmitriy Pushkov <ezze@ezze.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.7.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
