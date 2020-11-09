@@ -1,9 +1,5 @@
 import path from 'path';
 
-import webpack from 'webpack';
-
-import packageJson from './package';
-
 export default {
   target: 'node',
   node: {
@@ -28,15 +24,5 @@ export default {
       }
     }]
   },
-  resolve: {
-    symlinks: false
-  },
-  plugins: [
-    new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.DefinePlugin({
-      APP_NAME: JSON.stringify(packageJson.name),
-      APP_VERSION: JSON.stringify(packageJson.version)
-    })
-  ],
   devtool: 'source-map'
 };
