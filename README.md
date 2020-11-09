@@ -48,5 +48,5 @@ This demo repository reproduces Webpack 5 issue with using circular dependencies
 Built code must run without any errors as it was with Webpack 4. In order to see previous behavior with this repo just install Webpack 4:
 
 ```
-yarn add webpack@^4.0.0
+yarn add webpack@^4.0.0 --dev
 ```
