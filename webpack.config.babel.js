@@ -1,7 +1,6 @@
 import path from 'path';
 
 import webpack from 'webpack';
-import webpackNodeExternals from 'webpack-node-externals';
 
 import packageJson from './package';
 
@@ -32,9 +31,6 @@ export default {
   resolve: {
     symlinks: false
   },
-  externals: [
-    webpackNodeExternals()
-  ],
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
