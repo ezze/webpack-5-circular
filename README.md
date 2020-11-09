@@ -1,6 +1,6 @@
 # webpack-5-circular
 
-This demo repository reproduces Webpack 5 issue with using circular dependencies.
+This demo repository reproduces Webpack 5 issue with using circular dependencies: https://github.com/webpack/webpack/issues/11958
 
 ## How to reproduce
 
