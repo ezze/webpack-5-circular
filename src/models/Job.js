@@ -2,15 +2,13 @@ import { defineModel } from './helpers';
 
 import JobProductOutput from './JobProductOutput';
 
-const Job = (() => {
-  return defineModel({
-    id: {
-      type: 'integer',
-      primaryKey: true,
-      autoIncrement: true
-    }
-  });
-})();
+const Job = defineModel({
+  id: {
+    type: 'integer',
+    primaryKey: true,
+    autoIncrement: true
+  }
+});
 
 export function resolveJob(id) {
   return Job.find({
